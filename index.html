@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+  
+
+     <!--COUNTER-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+     <!--END-->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     
+    <title>Animaatiosivu</title>
+</head>
+<body>
+    <!--nav alkaa-->
+    <nav>
+        <div class="logo">
+            <h1>PROPHECY!</h1>
+        </div>
+
+        <div class="topnav" id="myTopnav">
+            <a href="#" class="icon" onclick="DisplayMenu()">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </a>
+            <a href="#">Duunit</a>
+            <a href="#">Huudit</a>
+            <a href="#">Muuvit</a>
+        </div>
+
+</nav>
+
+<!--nav loppuu-->
+
+
+<div class="top">
+    <div class="loading-box">
+        <div class="loading">Loading </div>
+        <div class="counter">100</div>%
+    </div>
+
+    <center>
+        <div class="title">
+            <h1>PROPHECY!</h1>
+            <div class="subtitle">
+                SCROLL DOWN <br>
+                &#8623;
+            </div>
+        </div>
+        </center>
+
+    <div class="top-photos">
+        <img src="./kuvat/graphic.jpg" alt="">
+        <img src="./kuvat/retro.jpg" alt="">
+        <img src="./kuvat/heart.jpg" alt="">
+    </div>
+
+</div>
+
+<!---top loppuu (anim loppuu)-->
+
+
+
+<div class="travel">
+    <p data-aos="flip-left"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="2000">Are you ready<br> <span>to see your </span> <br>destiny?</p>
+</div>
+
+<div class="about">
+    <p> Night will come, and I will follow
+        For my victims, no tomorrow
+        Make it fast, your time of sorrow
+        On his trail, I'll make you follow!</p>
+</div>
+
+<center>
+    <p style="font-size: 80px; font-family: 'Times New Roman'; padding: 30px;"> Contact </p>
+    <p style="font-size: 25px";>yritys@yritys.fi</p>
+</center>
+
+
+<center>
+    <div class="socialmedia">
+        <p style="font-size: 80px; font-family: 'Times New Roman'; padding: 30px;"> Follow us in socialmedia! </p>
+
+        <div class="section">
+            <div class="container">
+            <img src="./kuvat/fb.png">
+            </div>
+            
+        </div>
+
+        <div class="section">
+            <div class="container">
+                <img src="./kuvat/insta.png">
+            </div>
+           
+        </div>
+
+            <div class="section">
+                <div class="container">
+                    <img src="./kuvat/tiktok.png">
+            </div>
+                
+    </div>
+    </div>
+
+               
+
+    </div>
+    </center>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+
+</script>
+
+
+<script>
+    AOS.init({
+        duration:1000,
+    })
+</script>
+
+
+<script>
+    function DisplayMenu() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        }
+        else {
+            x.className = "topnav"
+        }
+    }
+</script>
+
+
+<script>
+    $(document).ready(function() {
+        $('.counter').counterUp ({
+            delay: 8,
+            time: 1600
+
+        })
+    });
+    
+</script>
+
+
+
+
+
+</body>
+</html>

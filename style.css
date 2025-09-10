@@ -1,0 +1,286 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Monoton&display=swap');
+
+
+* {
+    font-family: 'Bebas Neue';
+    margin: 0px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+}
+
+:root {
+    --gray: rgb(247, 233, 40) ;
+}
+
+body {
+    background-color: black;
+}
+
+.logo h1 {
+    position: absolute;
+    font-size: 45px;
+    margin: 20px;
+    font-family: 'Bebas Neue';
+
+}
+
+/* nav alkaa */
+
+.topnav {
+    float: right;
+}
+
+.topnav a{
+    font-size: 25px;
+    text-decoration: none;
+    display: none;
+}
+
+.topnav a.icon {
+    margin: 30px;
+    float: right;
+    display: block;
+    width: auto;
+}
+
+.dot {
+    float: left;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: rgb(4, 107, 85);
+    margin: 1px;
+    font-family: 'monoton';
+}
+
+.topnav.responsive{
+    display: inline-block;
+    width: 300px;
+    position: relative;
+    z-index: +2;
+    background-color: black;
+}
+
+.topnav.responsive a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.topnav.responsive .icon {
+    position: absolute;
+    right: 0px;
+    margin: 10px;
+}
+
+.topnav.responsive a:hover {
+    font-family: 'monoton';
+    color: var(--gray);
+    color: rgb(245, 234, 83);
+}
+
+/* nav loppuu*/
+
+.loading-box {
+    margin-top: 359px;
+    width: 10%;
+    position: absolute;
+    margin-left: 45%;
+    text-align: center;
+    font-size: 36px;
+    animation: remove 18s;
+    opacity: 0;
+}
+
+@keyframes remove {
+    0%{
+        opacity: 0;
+    }
+
+    1% {
+        opacity: 1;
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    16% {
+        opacity: 0;
+    }
+}
+
+.top {
+    height: 750px;
+    background: url(./kuvat/flora.jpg);
+    background-size: cover;
+    animation: showing 10s;
+    animation-delay: 0;
+}
+ 
+@keyframes showing  {
+ 
+    0% {
+        height: 750px;
+        background: linear-gradient(rgb(0,0,0), rgb(0, 0, 0)),url(./kuvat/flora.jpg);
+        background-size: cover;
+    }
+    50% {
+        height: 750px;
+        background: linear-gradient(rgb(0,0,0), rgb(0, 0, 0)),url(./kuvat/flora.jpg);
+        background-size: cover;
+       
+    }
+ 
+    100% {
+       
+        height: 750px;
+        background: linear-gradient(rgb(0,0,0), rgb(0, 0, 0)),url(./kuvat/flora.jpg);
+        background-size: cover;
+    }
+ 
+}
+ 
+.about {
+    background: url(./kuvat/flora.jpg);
+    background-size: cover;
+    height:750px;
+}
+
+.about p {
+    text-align: center;
+    padding: 280px;
+    line-height: 30px;
+    font-size: 30px;
+}
+
+.travel {
+    background: url(./kuvat/metal.jpg);
+    background-size: cover;
+    height:750px;
+}
+
+.travel p {
+    color: var(--gray);
+    padding-top: 150px;
+    line-height: 180px;
+    font-size: 300px;
+    text-align: center;
+}
+
+.travel span {
+   font-family: 'Times New Roman', Times, serif;
+   
+}
+
+.socialmedia .section {
+    height: 370px;
+    float: left;
+    width: 33.3%;
+    padding: 20px;
+    cursor: cell;
+
+}
+
+.socialmedia .container img {
+    width: 50%;
+    height: auto;
+    margin: 20px;
+}
+
+
+.top-photos {
+    text-align: center;
+    margin-top: 135px;
+    position: absolute;
+    width: 80%;
+    margin-left: 10%;
+    z-index: 1;
+    
+}
+
+.top-photos img {
+    height: 480px;
+}
+
+.top-photos img:nth-child(1), .top-photos img:nth-child(2), .top-photos img:nth-child(3) {
+    opacity: 0;
+    animation: reveal 4.5s;
+    animation-delay: 1s;
+}
+
+.top-photos img:nth-child(2) {
+    animation-delay: 2s;
+
+}
+
+.top-photos img:nth-child(3) {
+    animation-delay: 3s;
+
+}
+
+@keyframes reveal {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0;
+        transform: rotate3d(-285, 85, 30, 90deg);
+    }
+    45% {
+        opacity: 1;
+        transform: none;
+    }
+
+    90% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.title {
+    margin-top: 300px;
+    position: absolute;
+    width:  80%;
+    margin-left: 10%;
+    
+}
+
+.title h1 {
+    font-size: 190px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(243, 145, 227);
+    animation: show 12s;
+    animation-delay: 0s;
+    opacity: 1s;
+}
+
+.subtitle {
+    font-size: 25px;
+    color:rgb(4, 107, 85);
+    animation: show 12s;
+    animation-delay: 0s;
+    opacity: 1s;
+}
+
+@keyframes show {
+    0% {
+        opacity: 0 ;
+        transform: rotate3d(-285, 85, 30, 90deg);
+    }
+    69% {
+        opacity: 0 ;
+        transform: rotate3d(-285, 85, 30, 90deg);
+    }
+    70% {
+        opacity: 1 ;
+        transform: rotate3d(-285, 85, 30, 90deg);
+    }
+    80% {
+        opacity: 1 ;
+        transform: none;
+    }
+}
+
